@@ -7,6 +7,71 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+
+  </header>
+  <nav>
+
+  </nav>
+  <main>
+    <section class="areaInput">
+      <h1>Cadastrar veículos</h1>
+      <form class="form">
+        <p>
+          Nome:
+        </p>
+        <input type="text" name="nomeCarro" id="nomeCarro" placeholder="Nome">
+        <p>
+          Cor:
+        </p>
+        <input type="text" name="corCarro" id="corCarro" placeholder="Cor">
+        <p>Ano:
+        </p>
+        <input type="text" name="anoCarro" id="anoCarro" placeholder="Ano">
+        <p>Preço:
+        </p>
+        <input type="number" name="precoVeiculo" id="precoVeiculo" placeholder="Preço">
+        <p>Foto: 
+        </p>
+        <input type="text" name="fotoVeiculo" id="fotoVeiculo" placeholder="Foto">
+        <p>Vendido:
+        </p>
+        <input type="checkbox" id="vendido">
+        
+
+      </form>
+      <button class="cadastrarCarro" onclick="criarVeiculo()">Cadastrar</button>
+    </section>
+
+    <section class="displayArea">
+      <ul id="elementsList" class="elementsList">
+        <li class="veiculo">
+          <span>
+            <div class="imgCarro">
+              <img src="https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/09-images/onix-hatch-showroom-1920x960.jpg?imwidth=960" alt="">
+            </div>
+            <div class="infosVeiculo">
+              <h1>Golf</h1>
+              <span class="caracteristicas">
+                <p>Cor: Branco</p>
+                <p>Ano: 2015</p>
+                <p>Preço: 20.000</p>
+                <p>Vendido: Não</p>
+              </span>
+              <button class="removeVeiculo">Remover</button>
+            </div>          
+          </span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  <aside>
+
+  </aside>
+  <footer>
+    
+  </footer>
   
   <script src="script.js"></script>
 </body>
